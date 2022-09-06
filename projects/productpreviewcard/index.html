@@ -15,11 +15,13 @@
 <body>
     <div class="container">
         <div class="flex image">
-            <img src="images/image-product-desktop.jpg" class="desktop">
-            <img src="images/image-product-mobile.jpg" class="mobile">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/image-product-mobile.jpg" />
+                <img src="images/image-product-desktop.jpg" alt="Bottle of perfume">
+            </picture>
         </div>
         <div class="flex info">
-            <span class="overline">PERFUME</span>
+            <span class="category">PERFUME</span>
             <h1 class="display">Gabrielle Essence Eau De Parfum</h1>
             <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
                 Perfumer-Creator for the House of CHANEL.</p>
@@ -27,13 +29,12 @@
                 <span class="discount-price">$149.99</span>
                 <span class="sale-price">$169.99</span>
             </div>
-            <button class="btn"><img src="/images/icon-cart.svg" alt="Cart" > Add to Cart</button>
+            <button class="btn"><img src="images/icon-cart.svg" class="cart">Add to Cart</button>
         </div>
     </div>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/musicalen89">musicalen89</a>.
-      </div>
-    
+      </div>  
 </body>
 </html>
